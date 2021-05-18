@@ -3,25 +3,25 @@
 class UserTest extends \PHPUnit\Framework\TestCase
 {
 
-	protected $admin;
+	protected $user;
 
 	
 		
 
 	public function testGetName()
 	{
-		$this->admin = new \App\Admin;
-		$this->admin->setName('Ramisa');
+		$this->user = new \App\User;
+		$this->user->setName('Ramisa');
 
-		$this->assertEquals($this->admin->getName(), 'Ramisa');
+		$this->assertEquals($this->user->getName(), 'Ramisa');
 	}
 
 	public function testGetPassword()
 	{
-		$this->admin = new \App\Admin;
-		$this->admin->setPassword('100');
+		$this->user = new \App\User;
+		$this->user->setPassword('100');
 
-		$this->assertEquals($this->admin->getPassword(), '100');
+		$this->assertEquals($this->user->getPassword(), '100');
 	}
 
 }
